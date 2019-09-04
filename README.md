@@ -9,29 +9,11 @@ As with your assignments, please edit the LICENSE file (replace the [year] [full
 
 ---
 
-As always, Fork this repository, and then Clone it to your local computer.
-
-Before you begin, you will need to install Python Arcade, the graphics library we will be using for the first half of the semester. Open the Terminal (either by clicking on the magnifying glass and searching for CMD, or open the Terminal in VS Code) and type the following:
-
-*pip install arcade --user*
-
-pip is a tool for downloading and installing Python packages. arcade is the name of the package we will be using. When you type the command, you should see the components it is installing (with corresponding progress bars).
-
-When arcade has been installed, we can get to work:
-
-First, open main1.py. I am drawing several shapes that, if properly assembled, can form a smiley face. Right now, the shapes are all being drawn at (0,0), which is the bottom-left corner of the window. See if you can use those shapes to draw a smiley face in the center of the window. The small gray dots are catch lights for the eyes.
-
-The end result should look something like this:
-
-![Smile!](https://github.com/BL-MSCH-C220-F19/E01b-Smiles/blob/master/smile.png)
-
-When you have placed the shapes correctly, save the file and open main2.py. The only change I have made is to define coordinates (face_x and face_y) that represent the center of the circle. Figure out offsets for the other shapes in relation to face_x and face_y. Use face_x and face_y to move all the shapes to the middle of the window. Save your changes.
-
-Next, in main3.py, I have created several new coordinates to represent each of the shapes: smile, eye1, eye2, catch1, and catch2. Use what you learned in main2.py to define each of those coordinates in relation to face_x and face_y. Move the face to the middle of the window. You should only have to edit lines 13 through 18. Save your changes.
-
-Open main4.py. You will now be drawing many faces in the window. Editing lines 20 through 24, draw a grid of overlapping faces. Now, play with the values on lines 16 and 18. What happens when you adjust those numbers? Save your changes.
-
-When you have completed the exercise, commit your changes and push them back to GitHub. Turn in the URL of your repository on canvas.
+This program creates a smiling face that is centered on the canvas. 
+Main1.py takes shapes that were previously created and centers them on the screen. X-values, Y-values, width, and height values are adjusted according to how closely the rendered image resembles the example.
+Main2.py approaches the same problem as main1.py, but instead of simply replacing values main2.py adds or subtracts values based on the determined dimensional values of the arcade window. The program adds or subtracts values from X and Y in order to center the shapes and make them resemble the example image.
+Main3.py is the same program as main2.py, but the shapes are named and grouped together. The same subtraction and addition to X and Y values occurs in this program, centering the shapes and comparing them to the example image.
+Main4.py creates the same smiley face, but this program lines the smiley faces up and layers them multiple times across the arcade screen.
 
 *Extra credit:* 
 
